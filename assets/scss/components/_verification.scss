@@ -1,0 +1,44 @@
+.verify-box{   
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+.verify__alert{
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.295);
+    padding: 10px;
+}
+
+.frame{      
+    margin: 10px;
+    height: 200px;
+    width: 280px;
+    border-radius: 10px;
+    position: relative;  
+    display: flex;
+    justify-content: center;
+}
+.frame--show{
+    background: url(./../images/selfie.gif) no-repeat;   
+    background-size: cover;       
+}
+
+.frame__shot{ 
+    visibility: hidden;
+  position: absolute;
+   height: 50px;
+   width: 50px;
+   bottom: 0;
+   background: url(../images/icons/iconcamera.png) no-repeat;
+   background-size: contain;
+   background-color: rgba(255, 255, 255, 0.637);
+   border: 2px solid rgba(255, 255, 255, 0.801);
+   border-radius: 10px;
+}
+
+.frame__shot--show{
+    visibility: visible;
+ }
+

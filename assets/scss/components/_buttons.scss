@@ -1,0 +1,151 @@
+/***********************************
+BOTONES
+************************************/
+.btn {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  font-family: "Exo";
+  outline: none;
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn--success {
+  background-color: $marine;
+}
+
+.btn--success--zombie {
+  background-color: $rustyRed;
+  color: $lightgreen;
+}
+
+.btn--verify {
+  background-color: rgb(153, 153, 209);  
+}
+
+.btn--filter{
+  height: 30px;
+  width: 30px;
+  margin-left: 15px;
+  background: url(../images/icons/iconfilter.png) no-repeat;
+  background-size: 100%;
+}
+
+.btn--back {
+  background-color: #9f8cb1; 
+}
+
+.btn--msg {
+  height: 20px;
+  width: 20px;
+  margin:0;
+  background: url(../images/icons/icondialog.png) no-repeat;
+  background-size: 100%; 
+}
+
+.btn--remove {
+  height: 20px;
+  width: 20px;
+  margin:0;
+  background: url(../images/icons/iconremove.png) no-repeat;
+  background-size: 100%;
+}
+.btn--add{
+  height: 30px;
+  width: 30px;
+  margin:0;
+  background: url(../images/icons/iconadd.png) no-repeat;
+  background-size: 100%;
+}
+
+.btn--reply {
+  height: 30px;
+  width: 30px;
+  background: url(../images/icons/iconreply.png) no-repeat;
+  background-size: 100%;
+}
+
+.btn--map{
+  width: 30%;
+  height: 40px;
+  margin: 20px 20px;
+}
+.btn--position{
+  height: 50px;
+  width: 50px;
+  background: url(../images/icons/iconposition.png) no-repeat;
+  background-size: 90%;
+ 
+
+}
+
+.btn--route{
+  height: 50px;
+  width: 50px;
+  background: url(../images/icons/iconroute.png) no-repeat;
+  background-size: 100%;
+}
+/***********************************
+BOTON CIRCULAR MENU
+************************************/
+.btn--menu {
+  height: rem(60px);
+  width: rem(60px);
+  position: fixed;
+  bottom: rem(-15px);
+  background-color: rgb(12, 71, 134); 
+  border-radius: 50%;
+  color: $light;
+  font-size: 2rem;
+  z-index: 11;
+  margin: 0 auto;
+}
+
+/***********************************
+TOGGLE BUTTON
+************************************/
+.toggle {
+  display: flex;
+  justify-content: center;
+  margin: rem(15px);
+
+  .switch__contain {
+    position: relative;
+    overflow: hidden;
+    width: rem(120px);
+    height: rem(25px);
+  }
+
+  .switch__input {
+    position: absolute;
+    left: -99999rem;
+  }
+  .switch__input:checked ~ .switch__slider::after {
+    transform: translate3d(94px, 1px, 0);
+    transition: transform 0.25s linear;
+  }
+
+  .switch__slider,
+  .switch__slider::after {
+    position: absolute;
+    border-radius: rem(20px);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: rem(1px) solid $light;
+  }
+
+  .switch__slider::after {
+    content: "";
+    width: rem(22px);
+    height: rem(21px);
+    transform: translate3d(1px, 1px, 0);
+    transition: transform 0.25s linear;
+    border: 0;
+    background-color: $light;
+  }
+}

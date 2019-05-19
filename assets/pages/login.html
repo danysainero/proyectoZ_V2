@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="signup.html">Sign up</a>
+            <h1>proyectoZ</h1>
+            <a href="../../index.html">index</a>
+        </div>
+    </header>
+    <main>
+
+        <div class="verify-box">
+            <div class="frame">
+            <a href="verify.html" type="button" class="frame__shot"></a>
+            </div>
+        </div>
+
+        <div class="form-container  form-container--human">
+            <form class="form">
+                <div class="form__group">
+                    <label class="form__label" for="name">User name</label>
+                    <input class="form__input" type="text" id="name" />
+                </div>
+                <div>
+                    <label class="form__label" for="pass">Password</label>
+                    <input class="form__input" type="password" id="pass" />
+                </div>
+                <a class="btn btn--verify" href="#"> Verify <span></span></a>
+            </form>
+        </div>
+
+        <div class="form-container  form-container--zombie" >
+            <form class="form">
+                <div class="form__group">
+                    <label class="form__label" for="name">User name</label>
+                    <input class="form__input" type="text" id="name" />
+                </div>
+                <div>
+                    <label class="form__label" for="pass">Password</label>
+                    <input class="form__input" type="password" id="pass" />
+                </div>
+                <a class="btn  btn--success--zombie" href="#"> Verify <span></span></a>
+            </form>
+        </div>
+
+
+    </main>
+  <!--   <footer>
+        <button class="btn btn--menu">+</button>
+    </footer> -->
+
+    <script>
+        $(document).ready(function () {
+            $('.btn--verify').click(function () {
+                $('.frame').toggleClass("frame--show");
+                $('.frame__shot').toggleClass("frame__shot--show");
+            });
+        });
+    </script>
+</body>
+
+</html>

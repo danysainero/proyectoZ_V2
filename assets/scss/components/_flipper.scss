@@ -1,0 +1,31 @@
+/***************************************
+FLIPPER
+*****************************************/
+.flipper{
+    transition: .4s;          
+    transform-style: preserve-3d;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    
+    .flipper__front,.flipper__back{
+        position: absolute;               
+        backface-visibility:hidden; 
+    }
+    
+    .flipper__front{                  
+        transform:rotateY(0deg);         
+    }
+    .flipper__back{                  
+        transform:rotatey(180deg);      
+    }
+}
+
+.flip{
+    transform:rotateY(180deg);
+}
+.bgcolor--zombie{
+    background: url(../images/apocalipsis.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+}

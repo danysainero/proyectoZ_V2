@@ -1,0 +1,71 @@
+/******************************************
+GLOBAL BOX
+*********************************************/
+.box {
+  margin: 50px 10px 0 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2), -1px -2px 2px 0 rgba(0, 0, 0, 0.322);
+}
+
+.box--timeline {
+  background: rgba(255, 255, 255, 0.288);
+  margin: 10px 10px 0 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.box--search{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-color: rgba(140, 148, 218, 0.623); 
+  border-radius: 0 0 10px 10px ;   
+  padding: 10px;  
+}
+
+.box--friends{
+  margin: 5px;
+  padding: 3px 5px 0;
+  background-color: rgba(202, 204, 221, 0.616);
+  *{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  &:last-of-type{
+    margin-bottom: 50px;
+  }
+}
+
+.box--message {
+  background: rgba(255, 255, 255, 0.288);
+  margin: 5px;
+}
+.box--reply {
+  display: none;
+  margin: 0;
+  background-color: rgba(120, 82, 195, 0.836);
+  form {
+    display: flex;
+    justify-content: space-around;
+
+    .form__input{
+      margin:0;
+    }
+  }
+}
+/*******Clase que muestra la venta de reply*****************/
+.box--reply--show {
+  display: inline;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 5px;
+  border: 1px solid #e1ede960;
+  padding: 15px;
+}
+
+.box--map{
+  margin:10px;
+}

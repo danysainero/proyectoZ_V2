@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="login.html">log in</a>
+            <h1>proyectoZ</h1>
+            <a href="../../index.html">index</a>
+        </div>
+    </header>
+    <main>
+        <div class="toggle">
+            <label class="switch">
+                <div class="switch__contain">
+                    <input type="checkbox" class="switch__input" checked>
+                    <span class="switch__slider"></span>
+                </div>
+            </label>
+        </div>
+
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="flipper__front">
+                    <form class="form-container form  form-container--human" action="...">
+                        <fieldset>
+                            <legend>Datos personales</legend>
+                            <div>
+                                <label class="form__label" for="name">Nombre</label>
+                                <input class="form__input" type="text" id="name">
+                            </div>
+                            <div>
+                                <label class="form__label" for="surname">Apellido</label>
+                                <input class="form__input" type="text" id="surname">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Datos de contacto</legend>
+                            <div>
+                                <label class="form__label" for="email">Email</label>
+                                <input class="form__input" type="email" id="email">
+                            </div>
+                            <div>
+                                <label class="form__label" for="pass">Password</label>
+                                <input class="form__input" type="password" id="pass">
+                            </div>
+                        </fieldset>
+                        <button type="button" class="btn btn--success">Join</button>
+                    </form> 
+                </div>
+                
+                <div class="flipper__back">
+                    <form class="form form-container form-container--zombie  " action="..">
+                        <fieldset>
+                            <legend>Datos personales</legend>
+                            <div>
+                                <label class="form__label" for="namez">Nombre</label>
+                                <input class="form__input" type="text" id="namez">
+                            </div>
+                            <div>
+                                <label class="form__label" for="surnamez">Apellido</label>
+                                <input class="form__input" type="text" id="surnamez">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Datos de contacto</legend>
+                            <div>
+                                <label class="form__label" for="emailz">Email</label>
+                                <input class="form__input" type="email" id="emailz">
+                            </div>
+                            <div>
+                                <label class="form__label" for="passz">Password</label>
+                                <input class="form__input" type="password" id="passz">
+                            </div>
+                        </fieldset>
+                        <button type="button" class="btn btn--success--zombie">Join</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--   <footer>
+        <button class="btn btn--menu">+</button>
+    </footer> -->
+
+    <script>
+        $(document).ready(function () {
+            $('.switch__slider').click(function () {
+                $('.flipper').toggleClass("flip");
+                $('body').toggleClass("bgcolor--zombie");
+            });
+        });
+    </script>
+</body>
+
+</html>

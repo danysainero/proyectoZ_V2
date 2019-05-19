@@ -1,0 +1,172 @@
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/font";
+@import "partials/rem";
+@import "components/components";
+
+/*
+@import "login";
+@import "signin";
+@import "verify";
+@import "home";
+@import "map";
+@import "friends";
+@import "messages"; 
+@import "settings";
+@import "grids";
+@import "mixin";
+*/
+
+/*********************
+GLOBAL
+**********************/
+body {
+  background: url(/assets/images/background.png) no-repeat;
+  background-size: cover;
+  background-color: rgb(159, 140, 177);
+  padding-bottom: 5px;
+}
+p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/*************************************
+TIME LINE
+**************************************/
+
+/******NEWS HEADER***************************************************/
+@mixin header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $ash;
+}
+
+.news__header {
+  @include header();
+
+  .news__header__profile {
+    background: url(../images/gleen.jpg) no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+/*************************
+NEWS HEADER  Text, img & buttons
+***************************************************/
+.news__main {
+  margin-top: 10px;
+  p {
+    word-break: break-all;
+    margin-bottom: 2px;
+    font-weight: 400;
+    text-align: left;
+    font-size: 0.8rem;
+    background: rgba(255, 255, 255, 0.288);
+    padding: 3px;
+    border-radius: 5px;
+  }
+}
+
+.news__main__img img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.news__buttons {
+  display: flex;
+  justify-content: space-around;
+
+  .news__like,
+  .news__reply {
+    height: 30px;
+    width: 30px;
+  }
+  .news__like {
+    background: url(../images/icons/hearts.png) no-repeat;
+    background-size: 100%;
+  }
+  .news__reply {
+    background: url(../images/icons/iconreply.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+/******"modal reply"***************************************************/
+
+.news__reply__btn {
+  height: 30px;
+  width: 30px;
+  background: url(../images/icons/iconreply.png) no-repeat;
+  background-size: contain;
+  margin: 0 10px;
+}
+
+/***************Hide reply****************************************/
+.hide {
+  display: none;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.message__header {
+  height: 35px;
+  @include header;
+
+  .message__header__profile {
+    background: url(../images/jules.png) no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+.message-body__text {
+  position: relative;
+  padding: 5px;
+  border-radius: 10px;
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+  }
+}
+
+iframe{
+  height: 60vh;
+  width: 100%;
+  border-radius: 10px;
+}
+.map__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+/*********************************
+FOOTER
+***********************************/
+.footer {
+  display: flex;
+  justify-content: center;
+}

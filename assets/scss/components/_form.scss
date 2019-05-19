@@ -1,0 +1,64 @@
+/************************
+SIGN UP FORM
+***********************/
+.form-container {  
+  padding: rem(20px);
+  border-radius: rem(5px);
+  margin: 10px 10px;
+}
+
+.form {
+  .form__label {
+    margin: rem(5px 0 2px 20px);
+    color: $lightgreen;
+  }
+  .form__input {
+    padding: rem(10px 20px);
+    display: block;
+    height: rem(30px);
+    margin: rem(5px 0 20px);
+    border: none;
+    outline: none;
+    border-radius: rem(5px);
+    width: 100%;
+  }
+  .form__input--msg{
+    padding: rem(1px);
+    width: 85%;
+    display: inline-block;
+    margin: rem(0px);
+  }
+  legend {
+    display: none;
+  }
+}
+
+/*********FORM HUMAN************************************/
+.form-container--human {
+  background-color: $navyBlue;
+  opacity: 0.7;
+  box-shadow: rem(2px 2px 5px 0) rgba(6, 44, 16, 0.76);
+}
+/*********FORM ZOMBIE************************************/
+.form-container--zombie {
+  background-color: $ash;
+  opacity: 0.9;
+  
+  box-shadow:rem(2px 2px 10px 0) rgba(250, 244, 244, 0.63);
+
+  .form__input {
+    background-color: $dirty;
+  }
+}
+
+
+.form--search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form__input{
+    margin-bottom: 0;
+  }
+}
+

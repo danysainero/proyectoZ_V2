@@ -1,0 +1,23 @@
+/*********************
+HEADER
+**********************/
+
+.header {
+  background: linear-gradient(to top left, rgba(0, 0, 0, 0.65) 0%, rgba(255, 255, 255, 0.404) 100%);
+  display: flex;
+  justify-content: space-around;
+  & a,
+  h1 {
+    color: $light;
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+  & a {
+    font-size: 1.1rem;
+  }
+  & h1 {
+    font-weight: 500;
+    }
+}
