@@ -613,7 +613,7 @@ capa body opaca al abrir el menú
 GLOBAL
 **********************/
 body {
-  background: url(/assets/images/background.png) no-repeat;
+  background: url(../images/background.png) no-repeat;
   background-size: cover;
   background-color: #9f8cb1;
   padding-bottom: 5px;
